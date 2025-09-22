@@ -1,0 +1,101 @@
+:root {
+  --cor-fundo: #fff6f9;
+  --cor-primaria: #ff9ebb;
+  --cor-secundaria: #ffccd5;
+  --cor-texto: #333;
+  --cor-contraste: #000;
+  --cor-fundo-contraste: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 4px solid var(--cor-secundaria);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  background: var(--cor-secundaria);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+nav button {
+  background: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav button:hover {
+  background: var(--cor-primaria);
+  color: white;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--cor-primaria);
+}
+
+footer {
+  background: var(--cor-secundaria);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* Alto contraste */
+.alto-contraste {
+  background-color: var(--cor-contraste) !important;
+  color: var(--cor-fundo-contraste) !important;
+}
+
+.alto-contraste header,
+.alto-contraste nav,
+.alto-contraste section,
+.alto-contraste footer {
+  background: var(--cor-contraste) !important;
+  color: var(--cor-fundo-contraste) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.alto-contraste nav button {
+  background: var(--cor-fundo-contraste) !important;
+  color: var(--cor-contraste) !important;
+}
